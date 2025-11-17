@@ -12,6 +12,7 @@ tools {
     stages {
         stage('Build') {
             steps {
+                 bat 'mvn -version'
                 echo "Building Version: ${VERSION}"
                 echo 'Building..'
             }
